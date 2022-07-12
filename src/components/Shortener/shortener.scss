@@ -1,0 +1,88 @@
+.shortener {
+  height: 300px;
+  width: 70%;
+  display: block;
+  margin: auto;
+
+  .tool-content {
+    background: url("../../assets/images/bg-boost-desktop.svg");
+    border-radius: 10px;
+    background-color: #bbb;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+
+    form {
+      display: flex;
+      align-items: center;
+      width: 60%;
+
+      input {
+        padding: 10px;
+        width: 80%;
+        height: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #33d5d7;
+        color: white;
+
+        &:hover {
+          color: gray;
+          background-color: #33d4d7c5;
+        }
+      }
+    }
+  }
+
+  .none {
+    background: #33d5d7;
+  }
+
+  .output {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+    background: #eee;
+    border-radius: 10px;
+
+    .main-link {
+      h6 {
+        padding: 15px;
+      }
+    }
+
+    .output-link {
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .tool-content {
+      form {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .output {
+      width: 70%;
+      left: 15%;
+      margin: 5px auto;
+      position: absolute;
+      display: block;
+      text-align: center;
+    }
+  }
+}
