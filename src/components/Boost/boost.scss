@@ -1,0 +1,29 @@
+.Boost {
+  display: flex;
+  text-align: center;
+  .boost-content {
+    width: 100%;
+    background: url("../../assets/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+
+    h1 {
+      color: rgb(0, 0, 82);
+    }
+
+    button {
+      font-weight: bold;
+      padding: 15px 20px;
+      border-radius: 80px;
+      border: none;
+      background: #33d5d7;
+      color: white;
+
+      &:hover {
+        color: gray;
+        background-color: #33d4d7c5;
+      }
+    }
+  }
+}
