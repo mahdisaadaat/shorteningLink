@@ -1,0 +1,59 @@
+.Main {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+
+  .info {
+    h1 {
+      font-size: 60px;
+      line-height: 4rem;
+    }
+
+    p {
+      width: 70%;
+      font-size: 18px;
+      color: #888;
+      line-height: 1.5rem;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 80px;
+      background: #33d5d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        color: gray;
+        background-color: #33d4d7c5;
+      }
+    }
+  }
+
+  .cover {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 50px;
+    display: block;
+    width: 70%;
+    .info {
+      width: 100%;
+      text-align: center;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
