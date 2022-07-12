@@ -1,0 +1,187 @@
+.Header {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      color: white;
+
+      .Nav-close {
+        color: white;
+        font-size: 25px;
+      }
+
+      button {
+        margin: 5px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        border: none;
+        background: transparent;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      ul {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        li {
+          list-style: none;
+          border-bottom: 1px solid;
+        }
+      }
+
+      .login {
+        border-radius: 80px;
+        background: #2dc03e;
+        color: white;
+
+        &:hover {
+          background: #2dc03ec0;
+        }
+      }
+
+      .signup {
+        border-radius: 80px;
+        background: #d73333;
+        color: white;
+
+        &:hover {
+          background: #c02d2dc0;
+        }
+      }
+    }
+
+    h2 {
+      font-family: "Lobster";
+      cursor: pointer;
+    }
+
+    .Nav-open {
+      display: none;
+    }
+
+    * {
+      padding: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
+
+      &:hover {
+        color: #999;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    float: right;
+
+    button {
+      margin: 0px 5px;
+      font-weight: bold;
+      border: none;
+      background: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .login {
+      color: gray;
+
+      &:hover {
+        color: #aaa;
+      }
+    }
+
+    .signup {
+      padding: 15px 20px;
+      border-radius: 80px;
+      background: #33d5d7;
+      color: white;
+
+      &:hover {
+        color: gray;
+        background-color: #33d4d7c5;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+
+    .left {
+      width: 100%;
+      text-align: center;
+
+      .Nav-open {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        border: none;
+        background: transparent;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .items {
+        a {
+          display: none;
+        }
+      }
+    }
+
+    .right {
+      display: none;
+      padding: 0px;
+
+      .signup {
+        background: transparent;
+        color: gray;
+
+        &:hover {
+          background-color: transparent;
+          color: #aaa;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .left {
+      .items {
+        display: none;
+      }
+    }
+
+    .right {
+      display: none;
+      padding: 0px;
+      .signup {
+        background: transparent;
+        color: gray;
+
+        &:hover {
+          background-color: transparent;
+          color: #aaa;
+        }
+      }
+    }
+  }
+}
