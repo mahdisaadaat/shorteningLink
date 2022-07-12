@@ -1,3 +1,7 @@
+Hi everyone, i'm Mahdi Sadat, this is my first project with react that shorten the link for you.
+the packages that i have used is sass & react-icons.
+HOPE YOU'LL LIKE IT.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
